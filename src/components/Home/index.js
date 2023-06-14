@@ -1,0 +1,1 @@
+import {BgContainer} from './styledComponents'
