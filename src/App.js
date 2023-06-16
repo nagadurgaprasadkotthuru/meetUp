@@ -16,7 +16,7 @@ import './App.css'
 class App extends Component {
   state = {
     name: '',
-    activeTopic: 'Arts and Culture',
+    activeTopic: 'ARTS_AND_CULTURE',
     isShowRegisteredView: false,
     isShowErrorMsg: false,
   }
@@ -42,13 +42,14 @@ class App extends Component {
           onChangeInput: this.onChangeInput,
           onChangeIsShowRegisteredView: this.onChangeIsShowRegisteredView,
           onChangeIsShowErrorMsg: this.onChangeIsShowErrorMsg,
+          onChangeTopic: this.onChangeTopic,
         }}
       >
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/register" component={Register} />
-          <Route exact path="/not-found" component={NotFound} />
-          <Redirect to="/not-found" />
+          <Route exact path="/bad-path" component={NotFound} />
+          <Redirect to="/bad-path" />
         </Switch>
       </MeetupContext.Provider>
     )

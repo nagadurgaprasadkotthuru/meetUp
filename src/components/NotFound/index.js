@@ -4,7 +4,7 @@ const NotFound = () => (
   <BgContainer>
     <Image
       alt="not found"
-      src="https://assets.ccbp.in/frontend/react-js/tech-era/not-found-img.png"
+      src="https://assets.ccbp.in/frontend/react-js/meetup/not-found-img.png"
     />
     <Heading>Page Not Found</Heading>
     <Description>
